@@ -3,7 +3,8 @@ import * as mongoose from "mongoose";
 const connectDB = async (): Promise<typeof mongoose> => {
   console.log("Connecting Database....");
   try {
-    const uri = Bun.env.MONGO_URI;
+    const uri = process.env.MONGO_URI;
+    
     if (!uri) {
       throw "Please set mongo URI";
     }

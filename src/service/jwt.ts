@@ -2,10 +2,10 @@ import { JWT } from "@/model/jwt";
 import { User } from "@/model/user";
 import { sign } from "hono/jwt";
 
-const APP_NAME = Bun.env.APP_NAME || "hono";
-const APP_HOST = Bun.env.APP_HOST || "http://localhost:4000";
-const JWT_DURATION = parseInt(Bun.env.JWT_DURATION ?? "3600");
-const JWT_SECRET = Bun.env.JWT_SECRET || "password";
+const APP_NAME = process.env.APP_NAME || "hono";
+const APP_HOST = process.env.APP_HOST || "http://localhost:4000";
+const JWT_DURATION = parseInt(process.env.JWT_DURATION ?? "3600");
+const JWT_SECRET = process.env.JWT_SECRET || "password";
 
 export const generateToken = async (user: User): Promise<string> => {
   const payload = generatePayload(user);

@@ -140,22 +140,22 @@ export const calculateHandOverDate = (yearMonth: YearMonth) => {
   return handOverDate;
 };
 
-export const isProduction = Bun.env.APP_ENV === "production";
+export const isProduction = process.env.APP_ENV === "production";
 
-export const mode = Bun.env.APP_ENV || "development";
+export const mode = process.env.APP_ENV || "development";
 
-export const region = Bun.env.APP_REGION || "Kota Bontang";
+export const region = process.env.APP_REGION || "Kota Bontang";
 
-export const regionCode = Bun.env.APP_REGION_CODE || "6474";
+export const regionCode = process.env.APP_REGION_CODE || "6474";
 
-export const APP_HOST = Bun.env.APP_HOST || "http://localhost:4000";
+export const APP_HOST = process.env.APP_HOST || "http://localhost:4000";
 
-export const CLIENT_URL = Bun.env.CLIENT_URL || "http://localhost:5173";
+export const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:5173";
 
-export const GATE_URL = Bun.env.GATE_URL || "http://localhost";
+export const GATE_URL = process.env.GATE_URL || "http://localhost";
 
 export const GATE_SERVICE_ID =
-  Bun.env.GATE_SERVICE_ID || "00000000-0000-0000-0000-000000000000";
+  process.env.GATE_SERVICE_ID || "00000000-0000-0000-0000-000000000000";
 
 export const toArrayBuffer = (buffer: Buffer): ArrayBuffer => {
   const arrayBuffer = new ArrayBuffer(buffer.length);

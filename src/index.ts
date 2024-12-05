@@ -1,5 +1,6 @@
+import { serve } from "@hono/node-server";
 import { Hono } from "hono";
-import { serveStatic } from "hono/bun";
+import { serveStatic } from "@hono/node-server/serve-static";
 import { etag } from "hono/etag";
 import { logger } from "hono/logger";
 import { cors } from "hono/cors";
@@ -7,6 +8,8 @@ import { prettyJSON } from "hono/pretty-json";
 import apiV1 from "@/api/v1";
 import connectDB from "@/config/db";
 import withAuth from "@/middleware/withAuth";
+
+require("dotenv").config();
 
 const app = new Hono();
 
@@ -18,8 +21,8 @@ app.use(etag(), logger());
 app.use("/static/*", serveStatic({ root: "./" }));
 app.get("/", (c) =>
   c.text(
-    `${Bun.env.APP_NAME} ${Bun.env.APP_ENV} API`.toUpperCase() +
-      ` (Build: ${Bun.env.APP_BUILD_HASH})`
+    `${process.env.APP_NAME} ${process.env.APP_ENV} API`.toUpperCase() +
+      ` (Build: ${process.env.APP_BUILD_HASH})`
   )
 );
 app.get("/health", (c) => c.json("OK"));
@@ -47,7 +50,7 @@ app.onError((err, c) => {
 
 app.route("/v1", apiV1);
 
-export default {
+serve({
   port: 4000,
   fetch: app.fetch,
-};
+});

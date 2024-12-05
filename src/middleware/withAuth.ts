@@ -27,7 +27,7 @@ const withAuth = createMiddleware(async (c, next) => {
   }
 
   const jwtMiddleware = jwt({
-    secret: Bun.env.JWT_SECRET || "password",
+    secret: process.env.JWT_SECRET || "password",
   });
 
   return jwtMiddleware(c, next);
