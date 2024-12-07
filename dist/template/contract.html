@@ -1,0 +1,349 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SPK {{period.month}} {{period.year}} - {{partner.name}}</title>
+    <style>
+        .bordered-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .bordered-table,
+        .bordered-table th,
+        .bordered-table td {
+            border: 1px solid black;
+        }
+
+        .bordered-table th,
+        .bordered-table td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .bordered-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="text-align: center; text-transform: uppercase;"><strong>PERJANJIAN KERJA</br>MITRA STATISTIK BULAN
+            {{period.month}}
+            {{period.year}}</br>PADA BADAN PUSAT STATISTIK {{region}}</br>NOMOR: {{number}}</strong></p>
+    <p style="text-align: justify;">Pada hari ini {{sign.dayText}}, tanggal {{sign.dateText}}, bulan {{sign.monthText}},
+        tahun {{sign.yearText}} bertempat di Kantor BPS {{region}}, yang bertanda tangan di bawah ini:</p>
+    <ol>
+        <li style="text-align: justify;">{{authority.name}}: Pejabat Pembuat Komitmen Badan Pusat Statistik {{region}},
+            berkedudukan di {{authority.address}}, bertindak untuk dan atas nama Badan Pusat Statistik {{region}}
+            selanjutnya
+            disebut sebagai <strong>PIHAK PERTAMA</strong>.</li>
+        <li style="text-align: justify;">{{partner.name}}: Mitra Statistik bulan {{period.month}} {{period.year}},
+            berkedudukan di
+            {{partner.address}}, bertindak untuk dan atas nama diri sendiri, selanjutnya disebut <strong>PIHAK
+                KEDUA</strong>.</li>
+    </ol>
+    <p style="text-align: center;"><strong>Pasal 1</strong></p>
+    <p style="text-align: justify;"><strong>PIHAK PERTAMA</strong> memberikan pekerjaan kepada <strong>PIHAK
+            KEDUA</strong>
+        dan <strong>PIHAK KEDUA</strong> menerima pekerjaan dari <strong>PIHAK PERTAMA</strong> sebagai Petugas
+        Pendataan
+        Lapangan/Pengolahan Dokumen pada Badan Pusat Statistik {{region}} dengan lingkup pekerjaan yang ditetapkan oleh
+        <strong>PIHAK PERTAMA</strong>.
+    </p>
+    <p style="text-align: center;"><strong>Pasal 2</strong></p>
+    <p style="text-align: justify;">Ruang lingkup pekerjaan dalam Perjanjian ini mengacu pada wilayah kerja dan beban
+        kerja
+        sebagaimana tercantum dalam Lampiran yang merupakan bagian tidak terpisahkan dari Perjanjian ini dan
+        ketentuan-ketentuan lainnya yang ditetapkan oleh <strong>PIHAK PERTAMA.</strong></p>
+    <p style="text-align: center;"><strong>Pasal 3</strong></p>
+    <p style="text-align: justify;">Jangka Waktu Perjanjian terhitung sejak ditandatangani sampai dengan
+        tanggal {{final.dateFull}}</p>
+    <p style="text-align: center;"><strong>Pasal 4</strong></p>
+    <ol>
+        <li style="text-align: justify;"><strong>PIHAK KEDUA </strong>berkewajiban melaksanakan pekerjaan yang diberikan
+            oleh <strong>PIHAK PERTAMA </strong>sesuai dengan ruang lingkup pekerjaan sebagaimana dimaksud dalam Pasal
+            2,
+            dengan mentaati ketentuan pemerintah.</li>
+        <li style="text-align: justify;"><strong>PIHAK KEDUA</strong> untuk waktu yang tidak terbatas dan/atau tidak
+            terikat
+            kepada masa berlakunya Perjanjian ini, menjamin untuk memberlakukan sebagai rahasia setiap data/informasi
+            yang
+            diterima atau diperolehnya dari <strong>PIHAK PERTAMA,</strong> serta menjamin bahwa keterangan demikian
+            hanya
+            dipergunakan untuk melaksanakan tujuan menurut Perjanjian ini.</li>
+    </ol>
+    <div style="page-break-before: always;">
+        <p style="text-align: center;"><strong>Pasal 5</strong></p>
+        <ol>
+            <li style="text-align: justify;"><strong>PIHAK KEDUA </strong>apabila melakukan peminjaman dokumen/data/aset
+                milik
+                <strong>PIHAK PERTAMA</strong>, wajib menjaga dan menggunakan sesuai dengan tujuan perjanjian dan
+                mengembalikan
+                dalam keadaan utuh sama dengan saat peminjaman, serta dilarang menggandakan, menyalin, menunjukkan,
+                dan/atau
+                mendokumentasikan dalam bentuk foto atau bentuk apapun untuk kepentingan pribadi ataupun kepentingan
+                lain
+                yang
+                tidak berkaitan dengan tujuan perjanjian ini.
+            </li>
+            <li style="text-align: justify;"><strong>PIHAK KEDUA </strong>dilarang memberikan dokumen/data/aset milik
+                <strong>PIHAK PERTAMA </strong>yang berada dalam penguasaan <strong>PIHAK KEDUA</strong>, baik secara
+                langsung
+                maupun tidak langsung, termasuk memberikan akses kepada pihak lain untuk menggunakan, menyalin,
+                memfotokopi,
+                menunjukkan, dan/atau mendokumentasikan dalam bentuk foto atau bentuk apapun, sehingga informasi
+                diketahui
+                oleh
+                pihak lain untuk tujuan apapun.
+            </li>
+        </ol>
+        <p style="text-align: center;"><strong>Pasal 6</strong></p>
+        <ol>
+            <li style="text-align: justify;"><strong>PIHAK KEDUA</strong> berhak untuk mendapatkan honorarium dari
+                <strong>PIHAK
+                    PERTAMA </strong>sebesar Rp {{grandTotal.nominal}} ({{grandTotal.spell}} rupiah) untuk pekerjaan
+                sebagaimana
+                dimaksud dalam Pasal 2, termasuk biaya pajak, bea meterai, pulsa dan kuota internet untuk komunikasi,
+                dan
+                jasa
+                pelayanan keuangan.
+            </li>
+            <li style="text-align: justify;">Honorarium sebagaimana dimaksud pada ayat (1) dibayarkan oleh <strong>PIHAK
+                    PERTAMA</strong> kepada <strong>PIHAK KEDUA</strong> setelah menyelesaikan seluruh pekerjaan yang
+                ditargetkan sebagaimana tercantum dalam Lampiran Perjanjian ini, dituangkan dalam Berita Acara Serah
+                Terima
+                Hasil Pekerjaan, dan diserahkan paling lambat tanggal {{handOver.dateFull}}</li>
+            <li style="text-align: justify;"><strong>PIHAK KEDUA</strong> tidak diberikan honorarium tambahan apabila
+                melakukan
+                kunjungan di luar jadwal atau terdapat tambahan waktu pelaksanaan pekerjaan di luar jangka waktu
+                Perjanjian
+                sebagaimana dimaksud dalam Pasal 3, dengan tambahan waktu kunjungan atau tambahan waktu pelaksanaan
+                pekerjaan
+                paling lama sampai dengan tanggal {{handOver.dateFull}}</li>
+        </ol>
+        <p style="text-align: center;"><strong>Pasal 7</strong></p>
+        <ol>
+            <li style="text-align: justify;">Pembayaran honorarium sebagaimana dimaksud dalam Pasal 6 dilakukan setelah
+                <strong>PIHAK KEDUA</strong> menyelesaikan dan menyerahkan hasil pekerjaan sebagaimana dimaksud dalam
+                Pasal
+                2
+                kepada <strong>PIHAK PERTAMA</strong>.
+            </li>
+            <li style="text-align: justify;">Pembayaran sebagaimana dimaksud pada ayat (1) dilakukan oleh <strong>PIHAK
+                    PERTAMA
+                </strong>kepada <strong>PIHAK KEDUA </strong>sesuai dengan ketentuan peraturan perundang-undangan.</li>
+        </ol>
+    </div>
+    <div style="page-break-before: always;">
+        <p style="text-align: center;"><strong>Pasal 8</strong></p>
+        <ol>
+            <li style="text-align: justify;"><strong>PIHAK PERTAMA </strong>secara berjenjang melalui Tim Teknis di BPS
+                Kabupaten/Kota melakukan pemeriksaan dan evaluasi atas target penyelesaian dan kualitas hasil pekerjaan
+                yang
+                dilaksanakan oleh <strong>PIHAK KEDUA</strong> secara berkala setiap minggu.</li>
+            <li style="text-align: justify;">Hasil pemeriksaan dan evaluasi sebagaimana dimaksud pada ayat (1) menjadi
+                dasar
+                pembayaran honorarium <strong>PIHAK </strong><strong>KEDUA</strong> oleh <strong>PIHAK
+                </strong><strong>PERTAM</strong><strong>A</strong> sebagaimana dimaksud dalam Pasal 6 ayat (2), yang
+                dituangkan
+                dalam Berita Acara Serah Terima Hasil Pekerjaan yang ditandatangani oleh <strong>PARA PIHAK</strong>.
+            </li>
+        </ol>
+        <p style="text-align: center;"><strong>Pasal 9</strong></p>
+        <p style="text-align: justify;"><strong>PIHAK PERTAMA</strong> dapat memutuskan Perjanjian ini secara sepihak
+            sewaktu-waktu dalam hal <strong>PIHAK KEDUA</strong> tidak dapat melaksanakan kewajibannya sebagaimana
+            dimaksud
+            dalam Pasal 4, dengan menerbitkan Surat Pemutusan Perjanjian Kerja.</p>
+        <p style="text-align: center;"><strong>Pasal 10</strong></p>
+        <ol>
+            <li style="text-align: justify;">Apabila <strong>PIHAK KEDUA</strong> mengundurkan diri dengan tidak
+                menyelesaikan
+                pekerjaan sebagaimana dimaksud dalam Pasal 2, maka tidak diberikan honorarium atas pekerjaan yang telah
+                dilaksanakan.</li>
+            <li style="text-align: justify;">Dikecualikan tidak dikenakan sanksi sebagaimana dimaksud pada ayat (1) oleh
+                <strong>PIHAK PERTAMA</strong>, apabila <strong>PIHAK KEDUA</strong> meninggal dunia, mengundurkan diri
+                karena
+                sakit dengan keterangan rawat inap, kecelakaan dengan keterangan kepolisian.
+            </li>
+            <li style="text-align: justify;">Dalam hal terjadi peristiwa sebagaimana dimaksud pada ayat (2),
+                <strong>PIHAK
+                    PERTAMA</strong> membayarkan honorarium kepada <strong>PIHAK KEDUA</strong> secara proporsional
+                sesuai
+                dengan pekerjaan yang telah dilaksanakan.
+            </li>
+        </ol>
+        <p style="text-align: center;"><strong>Pasal 11</strong></p>
+        <ol>
+            <li style="text-align: justify;">Apabila terjadi Keadaan Kahar, yang meliputi bencana alam, bencana non
+                alam,
+                dan
+                bencana sosial, <strong>PIHAK KEDUA </strong>memberitahukan kepada <strong>PIHAK PERTAMA </strong>dalam
+                waktu paling lambat 7 (tujuh) hari kalender sejak mengetahui atas kejadian Keadaan Kahar dengan
+                menyertakan
+                bukti.</li>
+            <li style="text-align: justify;">Apabila terjadi kerusakan perangkat pencacahan yang menyebabkan pelaksanaan
+                pekerjaan tidak dapat dilakukan, <strong>PIHAK KEDUA</strong> memberitahukan kepada <strong>PIHAK
+                    PERTAMA</strong> dalam waktu paling lambat 7 (tujuh) hari kalender sejak terjadi kerusakan dimaksud.
+            </li>
+            <li style="text-align: justify;">Dalam hal terjadi peristiwa sebagaimana dimaksud pada ayat (1) dan/atau
+                ayat
+                (2),
+                pelaksanaan pekerjaan oleh <strong>PIHAK KEDUA </strong>dihentikan sementara dan dilanjutkan kembali
+                setelah
+                Keadaan Kahar berakhir, merujuk pada ketentuan yang ditetapkan oleh <strong>PIHAK PERTAMA</strong>.</li>
+            <li style="text-align: justify;">Apabila akibat Keadaan Kahar tidak memungkinkan dilanjutkan/diselesaikannya
+                pelaksanaan pekerjaan, <strong>PIHAK KEDUA </strong>berhak menerima honorarium secara proporsional
+                sesuai
+                dengan
+                pekerjaan yang telah diselesaikan dan diterima oleh <strong>PIHAK PERTAMA</strong>.</li>
+        </ol>
+    </div>
+    <div style="page-break-before: always;">
+        <p style="text-align: center;"><strong>Pasal 12</strong></p>
+        <p style="text-align: justify;">Hal-hal yang belum diatur dalam Perjanjian ini atau segala perubahan terhadap
+            Perjanjian
+            ini diatur lebih lanjut oleh <strong>PARA PIHAK</strong> dalam perjanjian tambahan/adendum dan merupakan
+            bagian
+            tidak terpisahkan dari Perjanjian ini.</p>
+
+        <p style="text-align: center;"><strong>Pasal 13</strong></p>
+        <ol>
+            <li style="text-align: justify;">Segala perselisihan atau perbedaan pendapat yang mungkin timbul sebagai
+                akibat
+                dari
+                Perjanjian ini, diselesaikan secara musyawarah untuk mufakat oleh <strong>PARA PIHAK</strong>.</li>
+            <li style="text-align: justify;">Apabila musyawarah untuk mufakat sebagaimana dimaksud pada ayat (1) tidak
+                berhasil,
+                maka <strong>PARA PIHAK</strong> sepakat untuk menyelesaikan perselisihan dengan memilih
+                kedudukan/domisili
+                hukum di Kepaniteraan Pengadilan Negeri {{region}}</li>
+            <li style="text-align: justify;">Selama perselisihan dalam proses penyelesaian pengadilan, <strong>PIHAK
+                    PERTAMA
+                </strong>dan<strong> PIHAK KEDUA</strong> wajib tetap melaksanakan kewajiban masing-masing berdasarkan
+                Perjanjian ini.</li>
+        </ol>
+        <p style="text-align: justify;">Demikian Perjanjian ini dibuat dan ditandatangani oleh <strong>PARA
+                PIHAK</strong>
+            dalam
+            2 (dua) rangkap asli bermeterai cukup, tanpa paksaan dari <strong>PIHAK</strong> manapun dan untuk
+            dilaksanakan
+            oleh
+            <strong>PARA PIHAK</strong>.
+        </p>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tbody>
+                <tr style="height: 35px;">
+                    <td style="border: 0px; padding: 8px; text-align: center; height: 35px; text-transform: uppercase;">
+                        <p style="text-align: center;"><strong>PIHAK KEDUA,</strong></p>
+                    </td>
+                    <td style="border: 0px; padding: 8px; text-align: center; height: 35px; text-transform: uppercase;">
+                        <p style="text-align: center;"><strong>PIHAK PERTAMA,</strong></p>
+                    </td>
+                </tr>
+                <tr style="height: 100px;">
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style="height: 35px;">
+                    <td style="border: 0px; padding: 8px; text-align: center; height: 35px; text-transform: uppercase;">
+                        <p style="text-align: center;"><strong>{{partner.name}}</strong></p>
+                    </td>
+                    <td style="border: 0px; padding: 8px; text-align: center; height: 35px; text-transform: uppercase;">
+                        <p style="text-align: center;"><strong>{{authority.name}}</strong></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="page-break-before: always;">
+        <p style="text-align: left; padding-left: 280px;text-transform: uppercase;">LAMPIRAN</br>PERJANJIAN KERJA MITRA
+            STATISTIK BADAN PUSAT
+            STATISTIK
+            {{region}}</br>NOMOR: {{number}}</p>
+        <p style="text-align: center;">DAFTAR URAIAN TUGAS, TARGET PEKERJAAN, JANGKA WAKTU, NILAI PERJANJIAN, DAN BEBAN
+            ANGGARAN</p>
+        <table class="bordered-table">
+            <tbody>
+                <tr>
+                    <td style="text-align: center;" rowspan="2">
+                        <p>Uraian Tugas</p>
+                    </td>
+                    <td style="text-align: center;" colspan="2">
+                        <p>Target Pekerjaan</p>
+                    </td>
+                    <td style="text-align: center;" rowspan="2">
+                        <p>Jadwal Pelaksanaan</p>
+                    </td>
+                    <td style="text-align: center;" rowspan="2">
+                        <p>Nilai Perjanjian</p>
+                    </td>
+                    <td style="text-align: center;" rowspan="2">
+                        <p>Kode Akun</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <p>Volume</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>Satuan</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <p>(1)</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>(2)</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>(3)</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>(4)</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>(5)</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>(6)</p>
+                    </td>
+                </tr>
+                {{#each activities}}
+                <tr>
+                    <td>
+                        <p>{{name}}</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>{{volume}}</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>{{unit}}</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>{{date}}</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>Rp {{total}}</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>{{code}}</p>
+                    </td>
+                </tr>
+                {{/each}}
+                <tr>
+                    <td colspan="4">
+                        <p>Terbilang: {{grandTotal.spell}} Rupiah</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>Rp {{grandTotal.nominal}}</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
