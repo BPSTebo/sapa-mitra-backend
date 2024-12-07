@@ -1,8 +1,8 @@
 {
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "start": "tsc && ts-node -r tsconfig-paths/register dist/index.js",
-    "up": "ts-node -r tsconfig-paths/register src/index.ts",
+    "start": "node dist/src/index.js",
+    "build": "tsc && tsc-alias",
     "seed": "npx --loader ts-node/esm src/config/seed.ts"
   },
   "dependencies": {
@@ -17,12 +17,14 @@
     "puppeteer-html-pdf": "^4.0.8",
     "terbilang-ts": "^2.1.0",
     "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.7.2"
+    "tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/node": "^20.11.17",
-    "tsx": "^4.7.1"
+    "tsc-alias": "^1.8.10",
+    "tsx": "^4.7.1",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
   }
 }

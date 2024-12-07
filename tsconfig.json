@@ -1,18 +1,23 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "module": "CommonJS",
     "target": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "esModuleInterop": true,
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
-    "rootDir": "./src",
-    "baseUrl": "./src",
+    "baseUrl": "./",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": ["./src/*"]
+    },
+    "typeRoots": ["./node_modules/@types"],
+    "types": [
+      "node"
+    ],
+    "strict": true,
+    "outDir": "./dist",
+    "skipLibCheck": true
   },
-  "include": ["src/**/*.ts"]
+  "tsc-alias": {
+    "resolveFullPaths": true
+  }
 }
