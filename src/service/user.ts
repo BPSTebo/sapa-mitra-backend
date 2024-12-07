@@ -4,6 +4,7 @@ import { Result } from "@/model/result";
 import { UpdatePasswordPayload, User } from "@/model/user";
 import UserSchema from "@/schema/user";
 import { parse } from "csv-parse/sync";
+import bcrypt from "bcrypt";
 
 export const getUsers = async (claims: JWT): Promise<Result<User[]>> => {
   const users = await UserSchema.find().select(["-password"]);
@@ -104,10 +105,7 @@ export const updatePassword = async (
 
   const { password: hashedPassword, ...restUser } = user.toObject(); // Convert the document to a plain object
 
-  const isMatch = await Bun.password.verify(
-    payload.oldPassword,
-    hashedPassword
-  );
+  const isMatch = await bcrypt.compare(payload.oldPassword, hashedPassword);
 
   if (!isMatch) {
     return {
@@ -117,9 +115,7 @@ export const updatePassword = async (
     };
   }
 
-  const hashedNewPassword = await Bun.password.hash(payload.newPassword, {
-    algorithm: "bcrypt",
-  });
+  const hashedNewPassword = await bcrypt.hash(payload.newPassword, 10);
 
   const result = await UserSchema.findByIdAndUpdate(id, {
     password: hashedNewPassword,

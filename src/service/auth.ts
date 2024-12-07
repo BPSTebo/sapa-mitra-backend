@@ -2,6 +2,7 @@ import { Result } from "@/model/result";
 import UserSchema from "@/schema/user";
 import { generateToken } from "@/service/jwt";
 import { getUserInfo } from "@/service/sso";
+import bcrypt from "bcrypt";
 
 export const login = async (
   email: string,
@@ -18,7 +19,7 @@ export const login = async (
   }
   const { password: hashedPassword, ...restUser } = user.toObject(); // Convert the document to a plain object
 
-  const isMatch = await Bun.password.verify(password, hashedPassword);
+  const isMatch = await bcrypt.compare(password, hashedPassword);
 
   if (!isMatch) {
     return {
